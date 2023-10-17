@@ -8,7 +8,7 @@ app.use(express.json()); // Parse JSON requests
 
 
 // Serve images statically (adjust the path accordingly)
-app.use('/images', express.static('components/images'));
+app.use('/images', express.static('/images'));
 
 // Define your API endpoint to serve data
 app.get('/api/data', (req, res) => {
